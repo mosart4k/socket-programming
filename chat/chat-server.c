@@ -75,7 +75,7 @@ int main(int argc,char *argv[])
 		n=sendto(sockfd,(char *)buffer,strlen(buffer),0,(struct sockaddr *)&cli_addr,fromlen);
 		
 		printf("You :%s\n",buffer);
-		char *ip=inet_ntoa(cli_add.sin_addr);
+		char *ip=inet_ntoa(cli_addr.sin_addr);
 		printf("IP: %s\n",ip);
 		printf("Port No: %d\n",portno);
 		
