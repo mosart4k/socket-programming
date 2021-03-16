@@ -77,6 +77,9 @@ int main(int argc, char *argv[])
 			error("Error on revieve!\n");
 		
 		printf("server :%s\n",buffer);
+		char *ip=inet_ntoa(serv_addr.sin_addr);
+		printf("IP: %s\n",ip);
+		printf("Port No: %d\n",portno);
 		
 	}
 	
